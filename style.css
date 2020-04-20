@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1440px;
+    background-color:hsl(0, 0%, 98%); 
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+/*HEADER START*/
+header{
+    text-align: center;
+    margin: auto;
+    width: 500px;
+}
+.top-heading{ /*<h1> element in header*/
+    font-weight: 200; 
+    font-size: 2em;
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 3px;
+
+}
+.sub-heading{ /*<h2> element in header*/
+    font-weight: 600;
+    font-size: 2em;
+    color: hsl(234, 12%, 34%);
+    margin: 3px;
+}
+.heading-txt{ /*<p> element in header*/
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: hsl(229, 6%, 66%);
+}
+/*HEADER END*/
+/*SECTION FEATURES START*/
+.feature-section{ 
+    display: grid; 
+    grid-template-columns:repeat(3,1fr); 
+    grid-template-rows:repeat(6,1fr); 
+    grid-gap: 25px;
+    margin: 25px;
+}
+.feature-cards{ /*for all cards*/
+    background-color: #ffffff;
+    padding: 5px 25px;
+
+}
+.feature-heading{ /*hedings for all cards*/
+    font-weight: 600;
+    font-size: 1.30em;
+    color: hsl(234, 12%, 34%);
+}
+.feature-description{ /*description for all cards*/
+    width: 75%;
+}
+.feature-icon{ /*icon for all cards*/
+    display:grid; /*this and line after are for positioning icon*/
+    justify-items: end; /*comment above */
+    padding: 10px 20px;
+    margin-top: 15%;
+}
+.supervisor-card{ /*Supervisor card*/
+    border-top: solid 5px hsl(180, 62%, 55%);
+    border-radius: 5px;
+    grid-row-start:2;
+    grid-row-end: span 3;
+    grid-column-start: 1 ;
+    grid-column-end: 2;
+    /*it's possible to do it on different ways the easiest one to explain is:
+    ---------------------------
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    ------------------------------ 
+    the shortest one is:
+    grid-area: 2/1/ 5/ 2;
+    -----------------------------
+    OR
+    grid-area: 2/1/ span 3/ span 1;
+    --------------------------------
+    */
+}
+.team-builder{ /*team builder card*/
+border-top: solid 5px hsl(0,78%,62%);
+border-radius: 5px;
+grid-row-start:1;   /*you can do it with grid-area or without span, check .supervisor card*/
+grid-row-end: span 3 ;
+grid-column-start:2;
+grid-column-end: 3;
+}
+.karma-card{/*karma card*/
+border-top: solid 5px #FCAF4A;
+border-radius: 5px;
+grid-row-start:4;
+grid-row-end:span 3;
+grid-column-start:2;
+grid-column-end:3;
+}
+.card-calculator{/*Calculator card*/
+border-top: solid 5px #549EF2;
+border-radius: 5px;
+grid-row-start:2 ;
+grid-row-end:span 3 ;
+grid-column-start: 3;
+grid-column-end: 4;
+}
+/*SECTION FEATURES END*/
+.bottom-txt{/*text in footer*/
+    font-size: 0.65rem;
+    font-weight: 400;
+}
+.bottom-txt a{ /*link in footer*/
+    color:green;
+    text-decoration: none;
+}
