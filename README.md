@@ -1,6 +1,6 @@
 # Four Card Feature
 
-This is a challenge that I found online by FrtonEnd Mentor. Four card grid, using grid numbered columns and rows. Also I used flexbox for wrapper, and to center content in middle. I tried to do a good job with commenting my CSS code. 
+This is a challenge that I found online by FrtonEnd Mentor. Four card grid, with grid numbered columns and rows. Also I used flexbox for wrapper, and to center content in middle. I tried to do a good job with commenting my CSS code. 
 
 # Contributing
 
